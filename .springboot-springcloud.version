@@ -1,0 +1,27 @@
+版本查看
+https://spring.io/projects/spring-cloud
+
+<parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.2.6</version>
+    <relativePath/> <!-- lookup parent from repository -->
+</parent>
+
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-dependencies</artifactId>
+    <version>2021.0.3</version>
+    <type>pom</type>
+    <scope>import</scope>
+</dependency>
+
+
+启动Eureka服务遇到的问题，跟版本有关系，尝试解决
+https://stackoverflow.com/questions/74669085/spring-cloud-netflix-cannot-enable-eureka-client
+
+
+
+Eureka version 4.0.0 onwards, which is being used in Spring Cloud 2022.0.0, you do not need to explicitly register using the annotation @EnableEurekaClient It automatically gets registered as client if spring-cloud-starter-netflix-eureka-client is on the class path. As per the - documentation
+（https://docs.spring.io/spring-cloud-netflix/docs/current/reference/html/#registering-with-eureka）
+
