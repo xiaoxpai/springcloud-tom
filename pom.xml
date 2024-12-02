@@ -26,6 +26,7 @@
         <module>springcloud-tom-eureka</module>
         <module>springcloud-user-service</module>
         <module>springcloud-job-service</module>
+        <module>springclod-tom-ribbon</module>
     </modules>
     <scm>
         <connection/>
