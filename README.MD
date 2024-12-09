@@ -46,6 +46,9 @@
   - 项目主分支 后续迭代新特性
 - registry
   - 注册中心 分支，该分支用户演示微服务构架：服务发现与服务注册之间的相互通信
+- dubbo-zookeeper-registry
+  - 改分支演示zookeeper作为注册中心，dubbo服务注册与发现（dubbo-3.x)
+  - ![dubbo-admin-service-discovery.png](document%2Fdubbo-admin-service-discovery.png)
 
 
 ### 关于服务注册与发现
